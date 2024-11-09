@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Explore from "@/components/Explore";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Image from "next/image";
 import { useEffect } from "react";
 
 
