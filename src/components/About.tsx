@@ -10,7 +10,7 @@ const About = () => {
         <div>
           import Image from 'next/image';
           <Image
-            src="/images/my-image.jpg"
+            src="/images/logo2-removebg-preview.png"
             alt="Description"
             width={500}
             height={300}
