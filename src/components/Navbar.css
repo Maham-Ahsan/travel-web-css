@@ -1,0 +1,125 @@
+/* Base Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Logo Section */
+.navbar-logo img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Desktop Menu */
+.navbar-menu {
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+}
+
+.menuLink a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menuLink a:hover {
+    color: #4f46e5;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #4d7c9c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-menu .menuLink {
+    padding: 1rem 0;
+}
+
+.mobile-menu .menuLink a {
+    font-size: 1.2rem;
+    color: #1f2937;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu .menuLink a:hover {
+    color: #4f46e5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hide desktop menu and show mobile icon */
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Show mobile menu when open */
+    .mobile-menu {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-menu .menuLink a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small Devices (Under 480px) */
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0.8rem;
+    }
+
+    .navbar-logo img {
+        width: 60px;
+    }
+
+    .mobile-menu .menuLink a {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,89 @@
+/* General Hero container styling */
+.hero-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Overlay for background dim effect */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Content styling */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #cbd5e0;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Destination form styling */
+.hero-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero-form h2 {
+    font-size: 1.5rem;
+    color: #e2e8f0;
+    margin-bottom: 15px;
+}
+
+.hero-form input[type="text"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.hero-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-form button:hover {
+    background-color: #357abd;
+}

@@ -1,0 +1,86 @@
+/* Contact Section Container */
+#contact {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Section Styling */
+#contact section {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Description */
+#contact h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Input Group */
+#contact label {
+    font-weight: bold;
+    color: #333;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+}
+
+/* Message Area */
+#contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit Button */
+#contact button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3c90a5;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #357ab8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #contact section {
+        padding: 20px;
+    }
+}

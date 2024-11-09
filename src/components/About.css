@@ -1,0 +1,80 @@
+/* About Section Container with Overlay */
+#about {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Overlay for semi-transparent background effect */
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/bga.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Inner Content Wrapper */
+#about > div {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styling */
+#about h2 {
+    font-size: 2rem;
+    color: #080808;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Logo/Image Styling */
+#about img {
+    margin: 20px auto;
+    border: 5px solid #666b70;
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(27, 28, 29, 0.4);
+}
+
+/* Paragraph Styling */
+#about p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #about > div {
+        padding: 20px;
+    }
+    #about h2 {
+        font-size: 1.8rem;
+    }
+    #about p {
+        font-size: 0.9rem;
+    }
+}
